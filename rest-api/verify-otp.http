@@ -1,0 +1,9 @@
+POST http://localhost:8000/verifyOTP
+Content-Type: application/json
+
+{
+  "user": {
+    "phoneNumber": "+919511512614"
+  },
+  "code": "059157"
+}

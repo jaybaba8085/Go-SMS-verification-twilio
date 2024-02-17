@@ -7,8 +7,8 @@ import (
 )
 
 func envACCOUNTSID() string {
-	println(godotenv.Unmarshal(".env"))
-	err := godotenv.Load(".env")
+	println(godotenv.Unmarshal("cmd/.env"))
+	err := godotenv.Load("cmd/.env")
 	if err != nil {
 		log.Fatal(err)
 		log.Fatal("Error loading .env file")
@@ -17,7 +17,7 @@ func envACCOUNTSID() string {
 }
 
 func envAUTHTOKEN() string {
-	err := godotenv.Load()
+	err := godotenv.Load("cmd/.env")
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
@@ -25,7 +25,7 @@ func envAUTHTOKEN() string {
 }
 
 func envSERVICESID() string {
-	err := godotenv.Load()
+	err := godotenv.Load("cmd/.env")
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}

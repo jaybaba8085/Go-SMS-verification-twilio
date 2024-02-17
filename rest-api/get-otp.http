@@ -1,0 +1,6 @@
+POST http://localhost:8000/otp
+Content-Type: application/json
+
+{
+  "phoneNumber": "+919511512614"
+}

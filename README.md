@@ -71,7 +71,18 @@ POST /otp
 ```bash
 curl -H "Content-Type: application/json" -X POST -d '{"phoneNumber": "+91##########"}' http://localhost:8000/otp
 ```
+OR
+### Example using REST API extension in Visual Studio Code:  get-OTP.http file
 
+```bash
+POST http://localhost:8000/otp
+Content-Type: application/json
+
+{
+  "phoneNumber": "+91##########"
+}
+
+```
 
 ### Response:
 
@@ -105,6 +116,22 @@ POST /verifyOTP
 ```bash
 curl -H "Content-Type: application/json" -X POST -d '{"user": {"phoneNumber": "+91##########"}, "code":"123456"}' http://localhost:8000/verifyOTP
 ```
+OR
+### Example using REST API extension in Visual Studio Code: verifyOTP.http file
+
+
+```bash
+POST http://localhost:8000/verifyOTP
+Content-Type: application/json
+
+{
+  "user": {
+    "phoneNumber": "+91##########"
+  },
+  "code":"123456"
+}
+```
+
 
 ### Response:
 
@@ -116,3 +143,5 @@ curl -H "Content-Type: application/json" -X POST -d '{"user": {"phoneNumber": "+
 }
 ```
 ---
+### Successfull HTTP Request's Response:
+![HTTP REQUEST IMAGE](./image.png)
