@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	router := gin.Default()
-	app := api.Config{Router: router}
+	serverInIt := gin.Default()
+	app := api.Config{Server: serverInIt}
 	app.Routes()
-	router.Run(":8000")
+	serverInIt.Run(":8000")
 }
