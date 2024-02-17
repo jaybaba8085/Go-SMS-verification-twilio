@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"net/http"
 	"time"
-	
+
 	"github.com/gin-gonic/gin"
 
-	"github.com/jaybaba8085/Go-SMS-verification-twilio/data"
+	"github.com/jaybaba8085/sms-verification/data"
 
 )
 
